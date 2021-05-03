@@ -317,6 +317,7 @@ nav {
     color: var(--primary);
     font-weight: 500;
     transition: all .5s;
+    cursor: pointer;
 }
 
 .readmoreBtn {
@@ -333,6 +334,59 @@ nav {
 
 .readmoreBtn:hover {
     color: white;
+}
+
+.modal__container {
+    width: 600px;
+}
+
+.modal__header {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 16px 40px; 
+}
+
+.modal__header h5 {
+    font-size: 2.3rem;
+    flex: 4;
+}
+
+.modal__header button {
+    font-size: 1.5em;
+    color: #a0260f;
+    outline: none;
+    font-weight: bold;
+}
+/* 
+.modal__header span {
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #a0260f;
+}
+
+.modal__header span:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+} */
+
+.modal__body img {
+    width: 100%;
+}
+
+.modal__body p {
+    font-size: 15px;
+    color: #999;
+    text-align: left;
+    padding: 2em 2em 1em;
+    margin: 0 !important;
+    line-height: 2em;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
 }
 /* Blog section */
 
