@@ -12,6 +12,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
 /* Header section */
 .nav__container {
     display: flex;
@@ -536,6 +540,10 @@ form {
 /* Subscribe section */
 
 /* Agents section */
+#agents {
+    width: 100%;
+}
+
 .agents__container {
     padding: 70px 0;
     width: 80%;
@@ -554,6 +562,7 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    overflow: hidden;
 }
 
 .agents__item {
@@ -599,6 +608,7 @@ form {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    padding: 0;
 }
 
 .agents__item--icon li a {
