@@ -8,11 +8,12 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+header, #about, #stats, #blog, #media, #portfolio, 
+#subscribe, #agents, #map, #contact, footer {
     width: 100%;
 }
 
