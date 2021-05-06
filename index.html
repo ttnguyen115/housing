@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 5 Homework</title>
     
     <!-- Bootstrap 4 -->
@@ -20,89 +20,117 @@
     <!-- FontAwesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
-    <!-- Modal -->
+    <!-- Light speed box -->
+    <link rel="stylesheet" href="./css/lsb.css">
+
     <!-- CSS Link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <nav class="">
-            <div class="nav__container">
-                <h1><a href="#">Hous<span>ing</span></a></h1>
-    
-                <!-- focus bug -->
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#">Home</a></li>
-                    <li class="nav__item"><a href="#about">About</a></li>
-                    <li class="nav__item"><a href="#blog">Blog</a></li>
-                    <li class="nav__item"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav__item"><a href="#agents">Agents</a></li>
-                    <li class="nav__item"><a href="#contact">Contact</a></li>
-                </ul>
+        <div class="container-fluid">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">hous<span class="heading-col-sm-4 col-xs-4or">ing</span></a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Agents</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- data-bs-ride="carousel" -->
+        <div id="housingCarousel" class="carousel slide" >
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#housingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
 
-            <div class="owl-carousel owl-theme carousel__container">
-                <div class="item">
-                    <img src="./images/b1.jpg" alt="">
-
-                    <div class="carousel__info">
-                        <h1>Lorem ipsum  amet</h1>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="./images/b1.jpg" class="d-block w-100" alt="img 1">
+                    <div class="carousel-caption d-md-block">
+                        <h4>Lorem ipsum  amet</h4>
                         <p>Lorem ipsum dolor sit, consectetur adiping elit.</p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <img src="./images/b2.jpg" alt="">
-
-                    <div class="carousel__info">
-                        <h1>LDolor sit hatant morbi </h1>
+                <div class="carousel-item">
+                    <img src="./images/b2.jpg" class="d-block w-100" alt="img 2">
+                    <div class="carousel-caption d-md-block">
+                        <h4>Dolor sit hatant morbi </h4>
                         <p>Quis autem vel eum iure reprehenderit quivol.</p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <img src="./images/b3.jpg" alt="">
-
-                    <div class="carousel__info">
-                        <h1>Quis autem ve eum iure</h1>
-                        <p>Excepteur sint ocecat cupid proident, deserunt..</p>
+                <div class="carousel-item">
+                    <img src="./images/b3.jpg" class="d-block w-100" alt="img 3">
+                    <div class="carousel-caption d-md-block">
+                        <h4>Quis autem ve eum iure</h4>
+                        <p>Excepteur sint ocecat cupid proident, deserunt.</p>
                     </div>
                 </div>
 
-                <div class="item">
-                    <img src="./images/b4.jpg" alt="">
-
-                    <div class="carousel__info">
-                        <h1>Voluptate velit esse</h1>
+                <div class="carousel-item">
+                    <img src="./images/b4.jpg" class="d-block w-100" alt="img 4">
+                    <div class="carousel-caption d-md-block">
+                        <h4>Voluptate velit esse</h4>
                         <p>Quis autem velreprehenderit qui ea.eum iure</p>
                     </div>
                 </div>
-
             </div>
-
-            <div class="owl-nav">
-                <div class="arrow left__arrow customPrevBtn"><img src="./images/left-arrow.png" alt=""></div>
-                <div class="arrow right__arrow customNextBtn"><img src="./images/right-arrow.png" alt=""></div>
-            </div>
-        </nav>
+            <button class="carousel-control-prev" type="button" data-bs-target="#housingCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#housingCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
 
     <section id="about">
-        <div class="about__container">
-            <h1>About</h1>
+        <div class="container about__container">
+            <h3>About</h3>
 
-            <div class="about__list">
-                <div class="about__item">
+            <div class="row">
+                <div class="col-sm-4 about__item">
                     <span class="fas fa-home"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
                 </div>
 
-                <div class="about__item">
+                <div class="col-sm-4 about__item">
                     <span class="fas fa-key"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
                 </div>
 
-                <div class="about__item">
+                <div class="col-sm-4 about__item">
                     <span class="far fa-money-bill-alt"></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
                 </div>
@@ -115,23 +143,23 @@
     </section>
 
     <section id="stats">
-        <div class="stats__container">
-            <h1>Stats</h1>
+        <div class="container stats__container">
+            <h3>Stats</h3>
     
-            <div class="stats__list">
-                <div class="stats__item">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-xs-6 stats__item">
                     <div class="counter">3500</div>
                     <p>clients</p>
                 </div>
-                <div class="stats__item">
+                <div class="col-sm-6 col-md-3 col-xs-6 stats__item">
                     <div class="counter">650</div>
                     <p>Plans</p>
                 </div>
-                <div class="stats__item">
+                <div class="col-sm-6 col-md-3 col-xs-6 stats__item">
                     <div class="counter">1021</div>
                     <p>projects</p>
                 </div>
-                <div class="stats__item">
+                <div class="col-sm-6 col-md-3 col-xs-6 stats__item">
                     <div class="counter">1010</div>
                     <p>Likes</p>
                 </div>
@@ -139,66 +167,73 @@
         </div>
     </section>
 
+
     <section id="blog">
-        <div class="blog__container">
-            <h1>Blog</h1>
+        <div class="container blog__container">
+            <h3>Blog</h3>
 
-            <div class="blog__list">
-                <div class="blog__item">
-                    <img src="./images/g1.jpg" alt="">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 blog__item">
+                    <div class="blog__content">
+                        <img src="./images/g1.jpg" alt="" class="img-responsive">
 
-                    <div class="blog__item--desc">
-                        <a data-bs-toggle="modal" data-bs-target="#housingModal" class="blog__item--header">Lorem Ipsum Passage,</a>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <a data-bs-toggle="modal" data-bs-target="#housingModal" class="readmoreBtn">Read more..</a>
+                        <div class="blog__item--desc">
+                            <a data-bs-toggle="modal" data-bs-target="#housingModal" class="blog__item--header">Lorem Ipsum Passage,</a>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <a data-bs-toggle="modal" data-bs-target="#housingModal" class="readmoreBtn">Read more..</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="blog__item">
-                    <img src="./images/g2.jpg" alt="">
+                <div class="col-md-4 col-sm-4 blog__item">
+                    <div class="blog__content">
+                        <img src="./images/g2.jpg" alt="" class="img-responsive">
 
-                    <div class="blog__item--desc">
-                        <a data-bs-toggle="modal" data-bs-target="#housingModal" class="blog__item--header">Lorem Ipsum Passage,</a>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <a data-bs-toggle="modal" data-bs-target="#housingModal" class="readmoreBtn">Read more..</a>
+                        <div class="blog__item--desc">
+                            <a data-bs-toggle="modal" data-bs-target="#housingModal" class="blog__item--header">Lorem Ipsum Passage,</a>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <a data-bs-toggle="modal" data-bs-target="#housingModal" class="readmoreBtn">Read more..</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="blog__item">
-                    <img src="./images/g1.jpg" alt="">
+                <div class="col-md-4 col-sm-4 blog__item">
+                    <div class="blog__content">
+                        <img src="./images/g1.jpg" alt="" class="img-responsive">
 
-                    <div class="blog__item--desc">
-                        <a data-bs-toggle="modal" data-bs-target="#housingModal" class="blog__item--header">Lorem Ipsum Passage,</a>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <a data-bs-toggle="modal" data-bs-target="#housingModal" class="readmoreBtn">Read more..</a>
+                        <div class="blog__item--desc">
+                            <a data-bs-toggle="modal" data-bs-target="#housingModal" class="blog__item--header">Lorem Ipsum Passage,</a>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <a data-bs-toggle="modal" data-bs-target="#housingModal" class="readmoreBtn">Read more..</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Bootstrap Modal -->
-        <div class="modal fade" id="housingModal" tabindex="-1" aria-labelledby="housingModalLabel" aria-hidden="true">
+        <div class="modal video-modal fade in" id="housingModal" tabindex="-1" aria-labelledby="housingModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content modal__container">
-                <div class="modal-header modal__header">
-                  <h5 class="modal-title" id="housingModalLabel">Housing</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <!-- <span aria-hidden="true">x</span> -->
-                  </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="./images/img2.jpg" alt="img2">
+                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                    </div>
                 </div>
-                <div class="modal-body modal__body">
-                  <img src="./images/img2.jpg" alt="img2">
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
     </section>
 
     <section id="media">
-        <!-- Video bugs -->
         <div class="video__container">
-            <!-- <img src="./images/video.jpg" alt=""> -->
+            <img src="./images/video.jpg" alt="">
+            <a data-bs-toggle="modal" data-bs-target="#housingVideo"><i class="fas fa-play-circle"></i></a>
         </div>
 
         <div class="media__desc">
@@ -206,35 +241,108 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
             <a data-bs-toggle="modal" data-bs-target="#housingModal" class="readmoreBtn">Read more..</a>
         </div>
+        
+        <!-- Media modal -->
+        <div class="modal fade" id="housingVideo" tabindex="-1" aria-labelledby="housingModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <button type="button" class="video-close" data-bs-dismiss="modal">x</button>
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cKBRHaPdjbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="portfolio">
-        <div class="portfolio__container">
-            <h1>Portfolio</h1>
+        <div class="container portfolio__container">
+            <h3>Portfolio</h3>
 
-            <div class="portfolio__list">
-                <div class="portfolio__item">
-                    <img src="./images/img1.jpg" alt="">
+            <div class="row portfolio__list">
+                <div class="col-md-4 col-sm-6 col-xs-12 portfolio__item p-2">
+                    <div class="lsb_container">
+                        <a class="lsb-preview" data-lsb-group="header" href="./images/img1.jpg">
+                            <img class="w-100" src="./images/img1.jpg" alt="">
+                            <div class="overlay_wrap">
+                                <div class="gallery__overlay ">
+                                    <h3>gallery</h3>
+                                    <p>Lorem Ipsum is simply dummy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="portfolio__item">
-                    <img src="./images/img2.jpg" alt="">
+                <div class="col-md-4 col-sm-6 col-xs-12 portfolio__item p-2">
+                    <div class="lsb_container">
+                        <a class="lsb-preview" data-lsb-group="header" href="./images/img2.jpg">
+                            <img class="w-100" src="./images/img2.jpg" alt="">
+                            <div class="overlay_wrap">
+                                <div class="gallery__overlay ">
+                                    <h3>gallery</h3>
+                                    <p>Lorem Ipsum is simply dummy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="portfolio__item">
-                    <img src="./images/img3.jpg" alt="">
+                <div class="col-md-4 col-sm-6 col-xs-12 portfolio__item p-2">
+                    <div class="lsb_container">
+                        <a class="lsb-preview" data-lsb-group="header" href="./images/img3.jpg">
+                            <img class="w-100" src="./images/img3.jpg" alt="">
+                            <div class="overlay_wrap">
+                                <div class="gallery__overlay ">
+                                    <h3>gallery</h3>
+                                    <p>Lorem Ipsum is simply dummy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="portfolio__item">
-                    <img src="./images/img4.jpg" alt="">
+                <div class="col-md-4 col-sm-6 col-xs-12 portfolio__item p-2">
+                    <div class="lsb_container">
+                        <a class="lsb-preview" data-lsb-group="header" href="./images/img4.jpg">
+                            <img class="w-100" src="./images/img4.jpg" alt="">
+                            <div class="overlay_wrap">
+                                <div class="gallery__overlay ">
+                                    <h3>gallery</h3>
+                                    <p>Lorem Ipsum is simply dummy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="portfolio__item">
-                    <img src="./images/img5.jpg" alt="">
+                <div class="col-md-4 col-sm-6 col-xs-12 portfolio__item p-2">
+                    <div class="lsb_container">
+                        <a class="lsb-preview" data-lsb-group="header" href="./images/img5.jpg">
+                            <img class="w-100" src="./images/img5.jpg" alt="">
+                            <div class="overlay_wrap">
+                                <div class="gallery__overlay ">
+                                    <h3>gallery</h3>
+                                    <p>Lorem Ipsum is simply dummy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="portfolio__item">
-                    <img src="./images/img6.jpg" alt="">
+                <div class="col-md-4 col-sm-6 col-xs-12 portfolio__item p-2">
+                    <div class="lsb_container">
+                        <a class="lsb-preview" data-lsb-group="header" href="./images/img6.jpg">
+                            <img class="w-100" src="./images/img6.jpg" alt="">
+                            <div class="overlay_wrap">
+                                <div class="gallery__overlay ">
+                                    <h3>gallery</h3>
+                                    <p>Lorem Ipsum is simply dummy</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -242,91 +350,100 @@
     </section>
 
     <section id="subscribe">
-        <div class="subscribe__container">
-            <h1>Subscribe</h1>
+        <div class="container subscribe__container">
+            <h3>Subscribe</h3>
             <p>consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
             <form>
-                <input type="text" placeholder="Email" required>
-                <a href="#">Click</a>
+                <input type="email" placeholder="Email" required>
+                <button class="btn btn-primary">Click</button>
             </form>
         </div>
     </section>
-
-    <section id="agents">
-        <div class="agents__container">
-            <h1>Our Agents</h1>
     
-            <div class="agents__list">
-                <div class="agents__item">
-                    <img src="./images/t1.jpg" alt="">
+    <section id="agents">
+        <div class="container agents__container">
+            <h3>Our Agents</h3>
+    
+            <div class="row agents__list">
+                <div class="col-md-3  col-sm-6 col-xs-6 my-2">
+                    <div class="agents-info">
+                        <img class="w-100" src="./images/t1.jpg" alt="">
 
-                    <div class="agents__item--desc">
-                        <h3>Kat Wally</h3>
-                        <p>Lorem Ipsum</p>
-                        <ul class="agents__item--icon">
-                            <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
-                        </ul>
+                        <div class="agents__item--desc">
+                            <h4>Kat Wally</h4>
+                            <p>Lorem Ipsum</p>
+                            <ul class="agents__item--icon">
+                                <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="agents__item">
-                    <img src="./images/t4.jpg" alt="">
+                <div class="col-md-3  col-sm-6 col-xs-6 my-2">
+                    <div class="agents-info">
+                        <img class="w-100" src="./images/t4.jpg" alt="">
 
-                    <div class="agents__item--desc">
-                        <h3>John Max</h3>
-                        <p>Lorem Ipsum</p>
-                        <ul class="agents__item--icon">
-                            <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
-                        </ul>
+                        <div class="agents__item--desc">
+                            <h4>John Max</h4>
+                            <p>Lorem Ipsum</p>
+                            <ul class="agents__item--icon">
+                                <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="agents__item">
-                    <img src="./images/t2.jpg" alt="">
+                <div class="col-md-3  col-sm-6 col-xs-6 my-2">
+                    <div class="agents-info">
+                        <img class="w-100" src="./images/t2.jpg" alt="">
 
-                    <div class="agents__item--desc">
-                        <h3>Roy Kent</h3>
-                        <p>Lorem Ipsum</p>
-                        <ul class="agents__item--icon">
-                            <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
-                        </ul>
+                        <div class="agents__item--desc">
+                            <h4>Roy Kent</h4>
+                            <p>Lorem Ipsum</p>
+                            <ul class="agents__item--icon">
+                                <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="agents__item">
-                    <img src="./images/t3.jpg" alt="">
+                <div class="col-md-3  col-sm-6 col-xs-6 my-2">
+                    <div class="agents-info">
+                        <img class="w-100" src="./images/t3.jpg" alt="">
 
-                    <div class="agents__item--desc">
-                        <h3>Joy Idson</h3>
-                        <p>Lorem Ipsum</p>
-                        <ul class="agents__item--icon">
-                            <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
-                        </ul>
+                        <div class="agents__item--desc">
+                            <h4>Joy Idson</h4>
+                            <p>Lorem Ipsum</p>
+                            <ul class="agents__item--icon">
+                                <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="rss"><i class="fas fa-rss"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6686389880015!2d106.66575111483687!3d10.836650361042278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752987863e7783%3A0x65991c89482b6f3b!2sCybersoft!5e0!3m2!1svi!2s!4v1619579640777!5m2!1svi!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <section id="contact">
-        <div class="contact__container">
-            <h1>Contact Us</h1>		
+        <div class="container contact__container">
+            <h3>Contact Us</h3>		
 
             <div class="contact__form">
-                <form action="#" method="post">
-                    <div class="left-form">
+                <form action="#" method="post" class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 left-way-w3">
                         <div class="form-left">
                             <input type="text" name="name" placeholder="Name" required="">
                         </div>
@@ -344,7 +461,7 @@
                         </div>
                     </div>
                 
-                    <div class="right-form">
+                    <div class="col-md-6 col-sm-6 col-xs-6 right-way-w3">
                         <textarea placeholder="Message" required=""></textarea>
                         <input type="submit" value="Submit">
                     </div>
@@ -353,16 +470,22 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer__container">
-            <p>© 2017 Housing. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank" class="w3"> W3layouts </a></p>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 copyright">
+                    <p>© 2017 Housing. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank" class="w3"> W3layouts </a></p>
+                </div>
 
-            <ul class="footer__icon">
-                <li><a href="#"><i class="fab fa-facebook-f fb"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter tw"></i></a></li>
-                <li><a href="#"><i class="fas fa-rss rss"></i></a></li>
-                <li><a href="#"><i class="fab fa-vk vk"></i></a></li>
-            </ul>
+                <div class="col-md-5 col-sm-12 icons-btn">
+                    <ul class="footer__icon">
+                        <li><a href="#"><i class="fab fa-facebook-f fb"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter tw"></i></a></li>
+                        <li><a href="#"><i class="fas fa-rss rss"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vk vk"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -403,6 +526,14 @@
     <script src="./js/jquery.countup.js"></script>
     <script>
         $('.counter').countUp();
+    </script>
+
+    <!-- Light speed box -->
+    <script src="./js/lsb.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $.fn.lightspeedBox();
+        });
     </script>
 
     <!-- Bootstrap -->
